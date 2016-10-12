@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.source                = { :git => 'https://github.com/chiunam/CTAssetsPickerController.git', :tag => 'v3.3.2-alpha' }
   spec.public_header_files   = 'CTAssetsPickerController/*.h'
   spec.source_files          = 'CTAssetsPickerController/**/*.{h,m}'
-  spec.resource_bundles      = 'CTAssetsPickerController/CTAssetsPickerController.bundle'
+  spec.resources    = 'CTAssetsPickerController/CTAssetsPickerController.bundle'
   spec.ios.frameworks        = 'Photos'
   spec.requires_arc          = true
   spec.dependency            'PureLayout', '~> 3.0.0'
