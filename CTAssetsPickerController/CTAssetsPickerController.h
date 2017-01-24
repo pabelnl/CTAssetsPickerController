@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  A controller that allows picking multiple photos and videos from user's photo library.
  */
-@interface CTAssetsPickerController : UIViewController
+@interface CTAssetsPickerController : UIViewController <UISplitViewControllerDelegate>
 
 /**
  *  The assets picker’s delegate object.
@@ -164,6 +164,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  @see selectAsset:
  */
 - (void)deselectAsset:(PHAsset *)asset;
+
+- (void)setupSplitViewController;
+- (UINavigationController *)emptyNavigationController;
+- (UIViewController *)emptyViewController;
 
 @end
 

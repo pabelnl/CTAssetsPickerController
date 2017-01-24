@@ -48,7 +48,7 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 
 
 @interface CTAssetsPickerController ()
-<PHPhotoLibraryChangeObserver, UISplitViewControllerDelegate, UINavigationControllerDelegate>
+<PHPhotoLibraryChangeObserver, UINavigationControllerDelegate>
 
 @property (nonatomic, assign) BOOL shouldCollapseDetailViewController;
 
